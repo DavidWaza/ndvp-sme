@@ -14,8 +14,7 @@ const NavList = [
     link: "#",
     label: "Meet",
     dropdown: [
-      { link: "/meet/team", label: "Team" },
-      { link: "/meet/partners", label: "Partners" },
+      { link: "/meet/speakers", label: "Speakers" },
     ],
   },
   {
