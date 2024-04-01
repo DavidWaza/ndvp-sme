@@ -1,5 +1,7 @@
 import VideoComponent from "@/app/Components/VideoComponent/VideoComponent";
+import Link from "next/link";
 import React from "react";
+import { GoArrowUpRight } from "react-icons/go";
 
 const AboutOrganizers = () => {
   return (
@@ -26,6 +28,12 @@ const AboutOrganizers = () => {
             Training & Development to individuals and small scale businesses in
             the interest of economic growth and long-term viability.
           </p>
+          <Link href={"#"}>
+            <div className="flex items-center gap-3 py-5">
+              <p className="text-black font-bold">Learn more</p>
+              <GoArrowUpRight className="text-black font-bold" />
+            </div>
+          </Link>
         </div>
       </div>
       <div></div>
