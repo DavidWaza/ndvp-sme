@@ -1,12 +1,8 @@
-import Image from "next/image";
-import Header from "./Components/Header/Header";
 import Herobanner from "./Components/Herobanner/Herobanner";
-import MobileHeader from "./Components/Header/MobileHeader";
 import VideoComponent from "./Components/VideoComponent/VideoComponent";
 import Summit from "./Components/SummitSection/Summit";
 import Keynote from "./Components/Keynotes/Keynote";
 import RegSection from "./Components/RegisterSection/RegSection";
-import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -35,14 +31,14 @@ export default function Home() {
               src={
                 "https://www.youtube.com/results?search_query=set+up+typography+reuseable+component+on+next"
               }
-              width={350}
+              width={300}
               height={500}
             />
             <VideoComponent
               src={
                 "https://www.youtube.com/results?search_query=set+up+typography+reuseable+component+on+next"
               }
-              width={350}
+              width={300}
               height={500}
             />
           </div>
@@ -52,7 +48,6 @@ export default function Home() {
         <Summit />
         <Keynote img={""} name={""} title={""} />
         <RegSection />
-        <Footer />
       </div>
     </main>
   );

@@ -22,14 +22,14 @@ const VideoComponent: React.FC<VideoProps> = ({ src, width, height }) => {
   };
 
   return (
-    <div>
+    <div className="">
       <video
         ref={videoRef}
         src={src}
         width={width}
         height={height}
         controls
-        className="rounded-lg w-full"
+        className="rounded-lg"
       />
       <div>
         <button onClick={playVideo}>Play</button>
