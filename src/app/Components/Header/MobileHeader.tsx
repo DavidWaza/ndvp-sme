@@ -54,9 +54,9 @@ export default function MobileHeader() {
         <div>
           <button onClick={handleToggle}>
             {navToggle ? (
-              <IoMdClose className="text-[#49FF91] transition-all ease-in" />
+              <IoMdClose className="text-white transition-all ease-in" size={25} />
             ) : (
-              <RxHamburgerMenu className="text-[#49FF91] transition-all ease-in" />
+              <RxHamburgerMenu className="text-white transition-all ease-in" size={25} />
             )}
           </button>
         </div>

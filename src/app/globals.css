@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
 }
-.about-banner{
+.about-banner, .contact-hero{
   background-image: url("/assets/heri-banner.png");
   background-size: cover;
   background-position: center;
