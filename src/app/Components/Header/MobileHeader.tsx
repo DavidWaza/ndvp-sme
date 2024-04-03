@@ -54,9 +54,15 @@ export default function MobileHeader() {
         <div>
           <button onClick={handleToggle}>
             {navToggle ? (
-              <IoMdClose className="text-white transition-all ease-in" size={25} />
+              <IoMdClose
+                className="text-white transition-all ease-in"
+                size={25}
+              />
             ) : (
-              <RxHamburgerMenu className="text-white transition-all ease-in" size={25} />
+              <RxHamburgerMenu
+                className="text-white transition-all ease-in"
+                size={25}
+              />
             )}
           </button>
         </div>
@@ -64,15 +70,18 @@ export default function MobileHeader() {
           <div className="bg-[#07004D] absolute top-[5rem] left-0 w-full transition-all ease-out p-10">
             {NavList.map((navItem, index) => (
               <div key={index} className="text-center py-5">
-                <button
-                  onClick={() => handleClickDropdown(index)}
-                  className="text-white flex justify-center gap-2 items-center font-bold"
-                >
-                  {navItem.label}
-                  {navItem.dropdown ? (
-                    <FaAngleDown className="text-white" />
-                  ) : null}
-                </button>
+                <Link href={navItem.link}>
+                  <button
+                    onClick={() => handleClickDropdown(index)}
+                    className="text-white flex justify-center gap-2 items-center font-bold"
+                  >
+                    {navItem.label}
+                    {navItem.dropdown ? (
+                      <FaAngleDown className="text-white" />
+                    ) : null}
+                  </button>
+                </Link>
+
                 {openDropdownIndex === index && navItem.dropdown && (
                   <div className="absolute z-10 left-0 mt-2 w-40 bg-white shadow-md rounded-md">
                     {navItem.dropdown.map((dropdownItem, dropdownIndex) => (
