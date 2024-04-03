@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import FooterLogo from "../../../../public/assets/footer-logo.png";
+import FooterLogoMobile from "../../../../public/assets/FooterLogo-mobile.png";
+
 import Link from "next/link";
 
 const menuLinks = [
@@ -43,13 +45,22 @@ const Footer = () => {
   return (
     <div className="bg-[#49FF91] py-[5rem] px-10 lg:px-20">
       <div className="flex justify-between">
-        <div>
+        <div className="2xl:block hidden">
           <Image
             src={FooterLogo}
             alt="footer-logo"
             width={800}
             height={800}
             className="w-[40rem]"
+          />
+        </div>
+        <div className="lg:hidden block ">
+        <Image
+            src={FooterLogoMobile}
+            alt="footer-logo"
+            width={400}
+            height={400}
+            className="w-20"
           />
         </div>
         <div className="grid grid-cols-2 gap-[2rem]">

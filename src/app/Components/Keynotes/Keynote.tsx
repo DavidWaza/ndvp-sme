@@ -41,15 +41,15 @@ const speakers: SpeakerProps[] = [
 ];
 const Keynote: React.FC<SpeakerProps> = () => {
   return (
-    <div className="bg-white py-20 lg:px-20 px-10">
-      <div className="flex justify-between items-center">
-        <h1 className=" text-2xl lg:text-[40px] font-bold py-5 lg:leading-[40px] text-black">
+    <div className="bg-white py-10 lg:py-20 lg:px-20 px-10">
+      <div className="lg:flex justify-between items-center">
+        <h1 className=" text-[30px] lg:text-[40px] font-bold py-5 lg:leading-[40px] text-black">
           Get to know our <br /> Keynote Speakers
         </h1>
         <Link href={"#"}>
           <div className="flex items-center gap-3">
-            <p className="text-black font-medium">View all Speakers</p>
-            <GoArrowUpRight className="text-black" />
+            <p className="text-black font-bold">View all Speakers</p>
+            <GoArrowUpRight className="text-black font-bold" />
           </div>
         </Link>
       </div>
