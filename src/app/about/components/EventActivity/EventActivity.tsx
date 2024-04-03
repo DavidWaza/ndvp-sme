@@ -38,7 +38,7 @@ const EventActivity = () => {
       <h1 className=" text-2xl lg:text-[40px] font-bold lg:leading-[40px] text-black text-center py-20">
         Event Activities
       </h1>
-      <div className="grid lg:grid-cols-5 gap-10">
+      <div className="grid grid-cols-2 gap-5 lg:grid-cols-5 lg:gap-10">
         {events.map((event, index) => (
           <div key={index}>
             <Image src={event.img} width={300} height={300} alt="img" />
