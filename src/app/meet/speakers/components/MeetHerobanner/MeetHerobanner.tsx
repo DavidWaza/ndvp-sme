@@ -13,8 +13,8 @@ import Chiedu from "../../../../../../public/assets/chiedu.png";
 import Kolo from "../../../../../../public/assets/kolo.png";
 import Bismarck from "../../../../../../public/assets/bismarck.png";
 import Olasupo from "../../../../../../public/assets/olasupo.png";
-import Ibukun from "../../../../../../public/assets/ibukun.png"
-import ObiCubana from "../../../../../../public/assets/obicubana.png"
+import Ibukun from "../../../../../../public/assets/ibukun.png";
+import ObiCubana from "../../../../../../public/assets/obicubana.png";
 
 interface SpeakerProps {
   img: string;
@@ -131,12 +131,16 @@ const KeynoteSpeakers: KeynoteSpeakerProps[] = [
 const MeetHerobanner = () => {
   return (
     <div>
-      <div className="about-banner py-20 lg:px-20 px-10 lg:text-left text-center">
-        <h1 className=" text-2xl lg:text-[60px] font-bold py-5 lg:leading-[70px]">
+      <div className="about-banner py-20 lg:px-20 px-10">
+        <h1 className=" text-2xl lg:text-[60px] font-bold py-5 lg:leading-[70px] 2xl:block hidden">
           Meet our Distinguised <br /> Keynote Speakers
         </h1>
+        <h1 className="text-[33px] font-bold py-5 lg:leading-[70px] 2xl:hidden block">
+          Meet our <br /> Distinguised <br />
+          Keynote Speakers
+        </h1>
       </div>
-      <div className="lg:flex justify-center  gap-5 bg-white py-20">
+      <div className="lg:flex justify-center gap-5 bg-white py-20 px-10">
         {speakers.map((speaker, index) => (
           <div key={index} className="">
             <div className="relative my-5 lg:my-0 group">
@@ -152,11 +156,11 @@ const MeetHerobanner = () => {
                 height={400}
                 className="rounded-[20px] hover:bg-[#1F1D42]"
               />
-              <div className="absolute bottom-10">
-                <p className="px-6 font-normal uppercase py-3">
+              <div className="absolute bottom-0 lg:bottom-10">
+                <p className="px-6 text-[14px] font-normal uppercase lg:py-3">
                   {speaker.designation}
                 </p>
-                <h1 className="text-white px-6 text-2xl w-full font-bold">
+                <h1 className="text-white px-6 text-[18px] lg:text-2xl w-full font-bold">
                   {speaker.name}
                 </h1>
                 <p className="px-6 font-normal text-[14px]">{speaker.title}</p>
@@ -173,10 +177,15 @@ const MeetHerobanner = () => {
 
       {/* honourable minister */}
       <div className="bg-white">
-        <h1 className=" text-2xl lg:text-[40px] font-bold py-10 lg:leading-[70px] text-black text-center">
+        <h1 className=" text-2xl lg:text-[40px] font-bold lg:py-10 lg:leading-[70px] text-black text-center 2xl:block hidden">
           Honourable Ministers on Strategic focus Areas
         </h1>
-        <div className="grid grid-cols-4  gap-5 bg-white py-20 px-10 lg:px-20">
+        <h1 className=" text-[30px] leading-[30px] lg:text-[40px] font-bold lg:py-10 lg:leading-[70px] text-black text-center block 2xl:hidden">
+          Honourable Ministers <br />
+          on Strategic focus <br />
+          Areas
+        </h1>
+        <div className="grid lg:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
           {ministers.map((speaker, index) => (
             <div key={index} className="">
               <div className="relative my-5 lg:my-0 group">
@@ -207,11 +216,14 @@ const MeetHerobanner = () => {
       </div>
 
       {/* Keynotes speakers */}
-      <div className="bg-white">
-        <h1 className=" text-2xl lg:text-[40px] font-bold py-10 lg:leading-[70px] text-black text-center">
-          Honourable Ministers on Strategic focus Areas
+      <div className="bg-white py-10">
+        <h1 className=" text-2xl lg:text-[40px] font-bold lg:py-10 lg:leading-[70px] text-black text-center 2xl:block hidden">
+          Keynote Speakers
         </h1>
-        <div className="grid grid-cols-4  gap-5 bg-white py-20 px-10 lg:px-20">
+        <h1 className=" text-[30px] leading-[30px] lg:text-[40px] font-bold lg:py-10 lg:leading-[70px] text-black text-center block 2xl:hidden">
+          Keynote Speakers
+        </h1>
+        <div className="grid lg:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
           {KeynoteSpeakers.map((speaker, index) => (
             <div key={index} className="">
               <div className="relative my-5 lg:my-0 group">
