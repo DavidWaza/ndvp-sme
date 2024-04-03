@@ -69,7 +69,7 @@ const Footer = () => {
             {menuLinks.map((menu, index) => (
               <div key={index}>
                 <Link href={menu.link}>
-                  <p className="my-3 text-[#071113] font-medium text-xl">
+                  <p className="my-3 text-[#071113] font-medium text-[14px]">
                     {menu.label}
                   </p>
                 </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
             {followLinks.map((menu, index) => (
               <div key={index}>
                 <Link href={menu.link}>
-                  <p className="my-3 text-[#071113] font-medium text-xl">
+                  <p className="my-3 text-[#071113] font-medium text-[14px]">
                     {menu.label}
                   </p>
                 </Link>

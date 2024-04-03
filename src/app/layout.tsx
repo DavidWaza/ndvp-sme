@@ -5,7 +5,6 @@ import Header from "./Components/Header/Header";
 import MobileHeader from "./Components/Header/MobileHeader";
 import Footer from "./Components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NDVP-SME",
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <div className="2xl:block hidden">
           <Header />
         </div>

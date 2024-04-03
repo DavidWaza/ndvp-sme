@@ -12,14 +12,14 @@ export default function Home() {
     <main>
       <Herobanner />
       <div className="bg-white py-20 lg:px-20 px-10">
-        <p className="text-black font-bold text-[40px] text-center 2xl:block hidden">
+        <p className="text-black font-semibold text-[40px] text-center 2xl:block hidden">
           Welcome to Niger Delta Viewpoint.
         </p>
         <p className="text-black font-bold text-[35px] leading-[40px] text-center 2xl:hidden block">
           Welcome to Niger <br />
           Delta Viewpoint.
         </p>
-        <p className="text-black font-medium py-5 text-[18px] lg:text-[20px] text-center 2xl:block hidden">
+        <p className="text-black font-normal !chakra py-5 text-[18px] lg:text-[20px] text-center 2xl:block hidden">
           Exposition, Trade Show, Empowerment, Conference & <br /> Networking
           Event.
         </p>

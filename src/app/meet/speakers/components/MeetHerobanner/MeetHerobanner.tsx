@@ -143,13 +143,14 @@ const MeetHerobanner = () => {
       <div className="lg:flex justify-center gap-5 bg-white py-20 px-10">
         {speakers.map((speaker, index) => (
           <div key={index} className="">
-            <div className="relative my-5 lg:my-0 group">
-              <div className="absolute top-5 right-10 ">
+            <div className=" my-5 lg:my-0 group">
+              <div className="mr-auto ml-0">
                 <TiArrowRight
                   size={30}
                   className="group-hover:bg-white group-hover:w-[30px] group-hover:h-[30px] group-hover:text-black rounded-full"
                 />
               </div>
+
               <ImageView
                 src={speaker.img}
                 width={400}
@@ -185,7 +186,7 @@ const MeetHerobanner = () => {
           on Strategic focus <br />
           Areas
         </h1>
-        <div className="grid lg:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
+        <div className="grid lg:grid-cols-2 2xl:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
           {ministers.map((speaker, index) => (
             <div key={index} className="">
               <div className="relative my-5 lg:my-0 group">
@@ -223,7 +224,7 @@ const MeetHerobanner = () => {
         <h1 className=" text-[30px] leading-[30px] lg:text-[40px] font-bold lg:py-10 lg:leading-[70px] text-black text-center block 2xl:hidden">
           Keynote Speakers
         </h1>
-        <div className="grid lg:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
+        <div className="grid lg:grid-cols-2 2xl:grid-cols-4  gap-5 bg-white lg:py-20 px-10 lg:px-20">
           {KeynoteSpeakers.map((speaker, index) => (
             <div key={index} className="">
               <div className="relative my-5 lg:my-0 group">

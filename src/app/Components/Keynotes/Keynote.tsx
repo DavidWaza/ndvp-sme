@@ -69,11 +69,11 @@ const Keynote: React.FC<SpeakerProps> = () => {
                 height={400}
                 className="rounded-[20px] hover:bg-[#1F1D42]"
               />
-              <div className="absolute bottom-10">
-                <h1 className="text-white px-10  text-2xl w-full font-bold">
+              <div className="absolute bottom-5">
+                <h1 className="text-white px-5  text-2xl w-full font-bold">
                   {speaker.name}
                 </h1>
-                <p className="px-10 font-medium">{speaker.title}</p>
+                <p className="px-5 font-medium">{speaker.title}</p>
               </div>
             </div>
           </div>

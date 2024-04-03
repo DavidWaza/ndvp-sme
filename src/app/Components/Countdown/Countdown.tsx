@@ -38,7 +38,7 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <div className="grid lg:grid-cols-2">
-    <div className="text-white grid grid-cols-4 items-center py-5 lg:justify-start justify-center">
+    <div className="text-white lg:flex gap-3 grid grid-cols-4 items-center py-5 lg:justify-start justify-center">
       {timeLeft.days > 0 && (
         <p className="flex flex-col border rounded-full w-20 h-20 p-4 justify-center text-center font-bold text-xl items-center">
           {`${timeLeft.days}  `}{" "}
