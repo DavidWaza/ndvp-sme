@@ -35,7 +35,7 @@ const events: EventProps[] = [
 const EventActivity = () => {
   return (
     <div className="px-10 lg:px-20 bg-white">
-      <h1 className=" text-2xl lg:text-[40px] font-bold lg:leading-[40px] text-black text-center py-20">
+      <h1 className=" text-2xl lg:text-[40px] font-bold lg:leading-[40px] text-black text-center py-10">
         Event Activities
       </h1>
       <div className="grid grid-cols-2 gap-5 lg:grid-cols-5 lg:gap-10">

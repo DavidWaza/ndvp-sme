@@ -7,7 +7,7 @@ const AboutOrganizers = () => {
   return (
     <div className="bg-white px-10 lg:px-20 py-32">
       <div className="grid lg:grid-cols-2 gap-10 ">
-        <div className="lg:order-1 order-2">
+        <div className="">
           <VideoComponent
             src={
               "https://www.youtube.com/results?search_query=set+up+typography+reuseable+component+on+next"
@@ -16,15 +16,14 @@ const AboutOrganizers = () => {
             height={700}
           />
         </div>
-
-        <div>
+        <div className="order-2">
           <h1 className="text-black pb-5 font-bold text-[20px]">
             Kudimata Nigeria Limited
           </h1>
           <h1 className="text-black pb-5 text-[30px] lg:text-[50px] font-bold leading-[40px]">
             About Organizer
           </h1>
-          <p className="text-black text-[20px]">
+          <p className="text-black text-[18px]">
             KUDIMATA NIG LTD, is a fun hybrid Educational Financial Community
             (FINCOM) driven towards providing Basic Financial Education,
             Advisory, Business Support, Internship, Mentorship, Empowerment,
